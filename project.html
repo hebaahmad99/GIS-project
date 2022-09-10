@@ -1,0 +1,271 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+  <title> Istanbul </title>
+
+  <style>
+    html,
+    body,
+    #viewDiv {
+      padding-top: 5px;
+      margin: 5px;
+      height: 98%;
+      width: 95%;
+    }
+      option:hover{background-color:#b4b4b4}
+      select,option {
+          background-color:#de7fbd;
+          color:#ffffff;
+          font-size: 20px;
+          font-family: serif,fantasy;
+          
+          
+      }
+      label {
+          font-size: 20px;
+          font-family: serif,fantasy;
+      }
+      
+  </style>
+
+  <link rel="stylesheet" href="https://js.arcgis.com/4.9/esri/css/main.css">
+  <script src="https://js.arcgis.com/4.9/"></script>
+
+    
+    <script>
+      
+    require([
+      "esri/Map",
+      "esri/layers/CSVLayer",
+      "esri/views/MapView",
+      "esri/core/urlUtils",
+      "esri/widgets/LayerList",
+      "esri/widgets/Expand",
+        "esri/widgets/Legend",
+       "esri/widgets/BasemapGallery",
+        "esri/widgets/Search"
+
+
+    ], function(
+      Map,
+      CSVLayer,
+      MapView,
+      urlUtils,
+       LayerList,
+       Expand,
+       BasemapGallery,
+       Search,
+       Legend
+    ) {
+
+      var url =
+        "book.csv";
+
+      var template = {
+        title: "Info",
+        content: "{*}"
+      };
+
+      var csvLayer = new CSVLayer({
+        url: url,
+        copyright: "Heba Ahmad & Huda odeh",
+        popupTemplate: template,
+       
+      });  
+        
+       
+         
+        
+         
+        
+        
+        // -------- Icons -----------------------
+        
+        
+        csvLayer.renderer = {
+            type: "unique-value",
+              field:"place_type",
+              uniqueValueInfos:[
+                  {
+                 value:"mall",
+                 symbol: {
+                 type: "picture-marker", 
+                 url: "mall.png",
+                 width: "30px",
+                 height: "30px" }
+             },
+                  {
+                  value:"park",
+                  symbol: {
+                  type: "picture-marker", 
+                  url: "park.jpg",
+                  width: "30px",
+                  height: "30px"}
+             },
+                 {
+                 value:"mosque",
+                 symbol: {
+                 type: "picture-marker", 
+                 url: "mosque.png",
+                 width: "30px",
+                 height: "30px" }
+             },
+             {
+                 value:"museume",
+                 symbol: {
+                 type: "picture-marker", 
+                 url: "museum.png",
+                 width: "30px",
+                 height: "30px" }
+             },
+                  
+
+          ]
+            
+          };
+        
+        
+        
+        
+        
+         
+        
+        //-------------------- list -------------------
+        
+        
+       var selectList= document.getElementById("selectList");
+        selectList.addEventListener("change",function(){
+            csvLayer.definitionExpression= selectList.value;
+            view.zoom= ZOOM;
+            
+        });
+
+       var selectlist= document.getElementById("selectlist");
+        selectlist.addEventListener("change",function(){
+            csvLayer.definitionExpression= selectlist.value;
+            view.zoom= ZOOM;
+            
+        });
+        
+        
+            
+        
+ 
+
+       
+        
+        
+        //------------- Map --------------  
+        
+        
+         var map = new Map({
+        basemap: "gray",
+        layers: [csvLayer]
+      });
+
+      var view = new MapView({
+        container: "viewDiv",
+        center:[28.973580,41.008945],
+        zoom:11,
+        map: map
+      });
+        
+         //--------------- Widgets ---------------------
+        
+          //---- Layer List ----
+        var layerList = new LayerList({
+            view:view,
+            
+        });
+
+        var llExpand = new Expand({
+            content:layerList
+        });
+        
+            //---- Basemap Gallery ----
+        var basemapGallery = new BasemapGallery({
+            view:view
+        });
+
+        var bgExpand = new Expand({
+            content:basemapGallery
+        });
+        
+            //---- Search ----        
+         var search = new Search({
+            view:view
+        });
+
+        var searchExpand = new Expand({
+            content:search
+        });
+
+            //---- Legend ----
+        var legend = new Legend({
+            view:view
+        });
+
+        var legExpand = new Expand({
+            content:legend
+        });
+
+            //---- Adding Widgets To the Map ----
+        
+         view.ui.add(llExpand ,"top-right");
+        view.ui.add(bgExpand,"top-right");
+         view.ui.add(searchExpand ,"top-right");
+         view.ui.add(legExpand ,"top-right");
+
+ });// End require
+</script>
+</head>
+
+        
+    <body style="background-color: #c1c1c1">
+        <h1 style="text-align:center; background-color: #de7fbd;color: white;font-size: :25px"> Istanbul Malls , Parks , Mosques and Museumes Map </h1>
+        <br><br>
+    <div align="center" style="border: 2px outset #030303 background-color:#eff2ed; text-align:center;"> 
+                <label class="custom-selector">Select Place : </label>
+
+        <select id="selectList" name="selectList" >
+            <option value=""> All places </option>
+            <option value="place_type='mall'"> Malls  </option>
+            <option value="place_type='park'"> Parks </option>
+            <option value="place_type='mosque'"> Mosques  </option>
+            <option value="place_type='museume'"> Museumes  </option>
+            
+       </select>
+       
+                <label class="custom-selector"> Rating : </label>
+
+       <select id="selectlist" name="selectlist">
+            <option value="">All rating </option>
+            <option value="rating='high'"> high rating Malls  </option>
+            <option value="rating='high1'"> high rating Parks  </option>
+            <option value="rating='high2'"> high rating Mosques  </option>
+            <option value="rating='high3'"> high rating Museumes </option>
+       </select>  
+    </div>
+        <br>
+  <div id="viewDiv"></div>
+        <p style="color:crimson"><b>Done by Heba Ahmed & huda odeh</b></p>
+</body>
+
+</html>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        

@@ -1,0 +1,64 @@
+place_type,Name,city,Working,URL,Lat,Long,rating,ratingg
+mall,Istanbul Cevahir, Istanbul,10AM-8PM,https://www.istanbulcevahir.com/,41.0627,28.993,medium,4
+mall,Venezia Mega Outlet,Istanbul,10AM-10PM,http://veneziamegaoutlet.com/,41.0803,28.8774,medium,4.4
+mall,Mall of Istanbul,Istanbul,10AM-8PM,https://www.mallofistanbul.com.tr/welcome,41.0625,28.8074,medium,4.2
+mall,Marmara Forum,Istanbul,10AM-8PM,https://www.marmaraforum.com.tr/,40.9971,28.8861,medium,4.3
+mall,Zorlu Center,Istanbul,10AM-8PM,http://www.zorlucenter.com.tr/,41.0669,29.0172,medium,4.2
+mall,Aqua Florya Shopping and Life Center,Istanbul,10AM-8PM,https://www.aquaflorya.com/,40.9655,28.798,medium,4
+mall,istinye Park,Istanbul,10AM-8PM,https://istinyepark.com.tr/,41.1095,29.0315,high,4.6
+mall,Istanbul Sapphire,Istanbul,10AM-10PM,https://www.sapphireavym.com/,41.085,29.0062,medium,4
+mall,Torium AVM,Istanbul,10AM-8PM,https://www.torium.com.tr/,41.0039,28.6884,high,4.7
+mall,Vadistanbul Shopping Mall,Istanbul,10AM-8PM,https://www.vadistanbul.com/,41.1071,28.9867,high,4.6
+mall,Galleria Shopping Mall,Istanbul,10AM-10PM,https://www.galleria.com.tr/,40.9744,28.8694,high,4.7
+mall,Trump Towers Mall,Istanbul,10AM-8PM,https://www.trumpalisverismerkezi.com/,41.068,28.9927,low,3.5
+mall,Historia Shopping and Life Center,Istanbul,10AM-10PM,https://www.historia.com.tr/,41.0144,28.9453,low,3.5
+mall,Kanyon,Istanbul,10AM-10PM,https://www.kanyon.com.tr/,41.0781,29.0107,high,4.5
+mall,212 Istanbul Power Outlet,Istanbul,10AM-10PM,https://www.212outlet.com/,41.0478,28.8103,medium,4
+mall,Zeruj Port Shopping Mall,Istanbul,10AM-8PM,http://zerujport.com/en/home/#qode-home-slider,41.0031,28.9142,low,3.5
+park,Gülhane Park,Istanbul," 
+Open 24 hours",https://www.viator.com/Istanbul-attractions/Gulhane-Park/d585-a9274?m=62635&supag=117342634782&supsc=kwd-698853822655&supai=509869872426&supap=&supdv=c&supnt=nt%3Ag&suplp=9069818&supli=1012782&supti=kwd-698853822655&tsem=true&supci=kwd-698853822655&supap1=&supap2=&gclid=CjwKCAjw07qDBhBxEiwA6pPbHk1XPD68iyyJFMd_IQQQKb_oNktSDFeH6QWAdPCeu7A86-AbY-WwjhoCnvoQAvD_BwE,41.0132,28.9814,high1,4.6
+park,Emirgan Park,Istanbul," 
+Open 24 hours",https://tesislerimiz.ibb.istanbul/ibb-sosyal-tesislerinde-lale-zamani/,41.1086,29.0531,high1,4.6
+park,Y?ld?z Park,Istanbul," 
+Open 24 hours",http://en.besiktas.bel.tr/entry/yildiz-park/,41.0491,29.0153,high1,4.7
+park,Miniaturk,Istanbul," 
+Open 24 hours",,41.059,28.9492,high1,4.6
+park,Florya Atatürk Forest,Istanbul," 
+Open 24 hours",,40.9769,28.787,medium,4.5
+park,Belgrade Forest,Istanbul," 
+Open 24 hours",,41.184,28.9885,high1,4.6
+park,Florya Atatürk Forest,Istanbul," 
+Open 24 hours",,40.9769,28.787,medium,4.5
+park, Fethi Pasa Korusu,Istanbul," 
+Open 24 hours",,41.0321,29.0266,low,4.4
+park,Botanik Park ?ocuk Park?,Istanbul," 
+Open 24 hours",,40.9983,28.8789,low,4
+park,Beylikdüzü Valley Of Life,Istanbul," 
+Open 24 hours",https://www.beylikduzu.istanbul/,41.0079,28.6356,high1,4.7
+mosque,Hagia Sophia,Istanbul,,https://muze.gen.tr/muze-detay/ayasofya,41.0086,28.9802,medium,4.7
+mosque,Büyük Mecidiye Mosque (Ortak?y Mosque),Istanbul,"	4AM–10PM",,41.0473,29.027,high2,4.8
+mosque,The Blue Mosque,Istanbul,9AM-7PM,http://www.sultanahmetcamii.org/tr/,41.0054,28.9768,medium,4.7
+mosque,Rüstem Pasha Mosque,Istanbul,Open 24 hours,https://gezipgordum.com/istanbul-gezilecek-yerler/,41.0177,28.9688,medium,4.6
+mosque,Zal Mahmud Pasha Mosque,Istanbul,Open 24 hours,,41.0447,28.9357,medium,4.6
+mosque,Eyüp Sultan Mosque,Istanbul,,,41.048,28.9338,high2,4.8
+mosque,?emsi Pa?a Mosque,Istanbul,,https://diyanet.gov.tr/tr-TR,41.0258,29.0111,medium,4.7
+mosque,Molla ?elebi Mosque,Istanbul,Open 24 hours,,41.0321,28.9906,medium,4.7
+mosque,?ehzade Mosque,Istanbul,,https://www.diyanet.gov.tr/tr-TR,41.0137,28.9574,high2,4.8
+mosque,Dolmabahçe Mosque,Istanbul,,https://camiler.diyanet.gov.tr/,41.0367,28.9953,high2,4.8
+mosque,Zeyrek Mosque,Istanbul,,https://camiler.diyanet.gov.tr/,41.0197,28.9572,high2,4.8
+mosque,Kilic Ali Pasa Mosque,Istanbul,,http://www.turanakinci.com/portfolio-view/tophane-kilic-ali-pasa-camii/,41.0264,28.9808,high2,4.8
+mosque,Yeni Valide Mosque,Istanbul,5AM–9PM,https://www.uskudar.bel.tr/tr/main/erehber/camiiler/8/yeni-valide-camii/545,41.0247,29.0151,high2,4.8
+mosque,?aml?ca Mosque,Istanbul,Open 24 hours,https://www.diyanet.gov.tr/tr-TR,41.034,29.0704,high2,4.8
+mosque,Beylerbeyi Camii,Istanbul,,,41.0448,29.0462,high2,4.8
+mosque,Pammakaristos Church,Istanbul,,,41.029,28.9465,medium,4.5
+museume,Topkapi Palace Museum,Istanbul,"	10AM–4PM",https://www.millisaraylar.gov.tr/saraylar/topkapi-sarayi/,41.0115,28.9834,high3,4.7
+museume,Dolmabahçe Palace,Istanbul,"	9AM–4PM",https://www.millisaraylar.gov.tr/saraylar/dolmabahce-sarayi,41.0392,29.0005,high3,4.7
+museume,Istanbul Archaeological Museums,Istanbul,9AM–7PM,https://muze.gov.tr/,41.0117,28.9813,medium,4.5
+museume,Istanbul Museum of Modern Art,Istanbul,"	11AM–5PM",https://www.istanbulmodern.org/,41.0299,28.9733,medium,4.4
+museume,?stanbul Toy Museum,Istanbul,"	10:30AM–6PM",https://istanbuloyuncakmuzesi.com/,40.9759,29.0707,high3,4.7
+museume,Madame Tussauds Istanbul,Istanbul,"	12AM–6PM",https://www.madametussauds.com/istanbul/,41.0347,28.9798,low,4.3
+museume,Pelit ?ikolata Muse,Istanbul,"	10AM–5PM",http://www.pelitcikolatamuzesi.com/,41.059,28.6637,medium,4.4
+museume,Istanbul Aviation Museum,Istanbul,,https://istanbulhavamuzesi.hvkk.tsk.tr/,40.9642,28.8261,medium,4.6
+museume,Rahmi M. Koç Museum,Istanbul,"	10AM–5:30PM",http://www.rmk-museum.org.tr/,41.0426,28.9495,high3,4.8
+museume,Ataturk Museum,Istanbul,,https://www.ktb.gov.tr/TR-96348/ataturk-muzeleri.html,41.0564,28.9871,high3,4.7
+museume,Maritime Museum,Istanbul,,https://denizmuzesi.dzkk.tsk.tr/en,41.0415,29.0054,low,4.3
